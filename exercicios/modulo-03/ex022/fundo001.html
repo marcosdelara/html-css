@@ -2,15 +2,56 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Papel de Parede</title>
+    <title>Teste de imagem de fundo</title>
     <style>
-        body {
-            background-image: url('imagens/wallpaper001.jpg');
-        }
+
+            body {
+                
+                background-color: #003376;
+                background-image: url('imagens/bkg_home2.jpg');
+                background-position: 50% 50%;
+                background-size: cover;
+                padding-bottom: 0px;
+                background-attachment: fixed;
+            }
+
+            div.quadrado {
+                display: inline-block;
+                border: 2px solid black;
+                border-radius: 10px;
+                background-color: rgb(18, 187, 187);
+                width: 300px;
+                height: 300px;
+            }
+
+            div#q1 {
+                border: 1px solid rgba(255,255,255,0.08);
+                background-color: rgba(255,255,255,0.05);
+            }
+
+            div#q2 {
+                background-image: linear-gradient(to bottom, yellow, orange);
+            }
+
+            div#q3 {
+                background-image: url('imagens/pattern003.png');
+            }
+
     </style>
 </head>
 <body>
-    <h1>Papel de parede</h1>
+    <div class="quadrado" id="q1">
+
+    </div>
+
+    <div class="quadrado" id="q2">
+
+    </div>
+
+    <div class="quadrado" id="q3">
+
+    </div>
 </body>
 </html>

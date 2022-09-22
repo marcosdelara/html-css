@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundo</title>
     <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            height: 100vh;
-        }
         body {
-            background-color: black;
+            height: 100vh;
+           /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-repeat: repeat-y; 
-            background-attachment: scroll;
-            background-position: right bottom;
+            background-position: center center;
+            background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            */
             
             /* background: black url('imagens/wallpaper002.jpg') no-repeat fixed center center; */
+
+            /* shorthand - background
+               color > image > position > repeat > [size] > attachment
+          */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
@@ -27,6 +29,9 @@
             width: 400px;
             margin: auto;
             padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
         }
     </style>
 </head>
